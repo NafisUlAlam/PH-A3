@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
     <!-- font awesome cdn -->
     <script
       src="https://kit.fontawesome.com/894511ecd0.js"
@@ -29,14 +30,110 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              green: "#ABEF5F",
+              blck: "#212121",
             },
             fontFamily: {
               Manrope: ["Manrope", "sans-serif"],
+            },
+            backgroundImage: {
+              buttonbg: "#ABEF5F",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-Manrope"></body>
+  <body class="font-Manrope">
+    <!-- header section -->
+    <header
+      class="container mx-auto p-4 bg-gradient-to-b from-[#f4f4f4] to-[#fff]"
+    >
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="navbar-start lg:w-1/3">
+          <a class="btn btn-ghost text-2xl"
+            ><i
+              class="fa-solid fa-arrow-right text-black bg-green p-2 rounded-full -rotate-45"
+            ></i
+            ><span class="font-extrabold text-blck">Rinterio</span></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#737373]">
+            <li>
+              <a class="hover:font-extrabold hover:text-[#494949]">Home</a>
+            </li>
+            <li>
+              <a class="hover:font-extrabold hover:text-[#494949]">Services</a>
+            </li>
+            <li>
+              <a class="hover:font-extrabold hover:text-[#494949]">Portfolio</a>
+            </li>
+            <li>
+              <a class="hover:font-extrabold hover:text-[#494949]">Blog</a>
+            </li>
+            <li>
+              <a class="hover:font-extrabold hover:text-[#494949]"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
+              <i
+                class="fa-solid fa-bars w-12 h-12 rounded-full border flex items-center justify-center bg-white text-[#737373] hover:bg-[#737373] hover:text-white"
+              ></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow right-0"
+            >
+              <li>
+                <a class="hover:font-extrabold hover:text-[#494949]">Home</a>
+              </li>
+              <li>
+                <a class="hover:font-extrabold hover:text-[#494949]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="hover:font-extrabold hover:text-[#494949]"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="hover:font-extrabold hover:text-[#494949]">Blog</a>
+              </li>
+              <li>
+                <a class="hover:font-extrabold hover:text-[#494949]"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex lg:gap-4">
+            <a class="hover:cursor-pointer"
+              ><i
+                class="fa-solid fa-magnifying-glass p-3 bg-white text-[#737373] text-lg rounded-full border border-[#E9E9E9] w-12 h-12 flex justify-center items-center"
+              ></i
+            ></a>
+            <a class="hover:cursor-pointer"
+              ><i
+                class="fa-solid fa-cart-shopping p-3 bg-white text-[#737373] text-lg rounded-full border border-[#E9E9E9] w-12 h-12 flex justify-center items-center"
+              ></i
+            ></a>
+            <a
+              class="btn text-[#1C1C1C] font-extrabold text-lg bg-green rounded-3xl"
+              >Book Consult<i
+                class="fa-solid fa-arrow-right text-white bg-[#1C1C1C] p-2 rounded-full -rotate-45"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
