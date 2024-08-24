@@ -160,9 +160,9 @@
       </div>
     </header>
 
-    <main class="container mx-auto lg:p-4 bg-[#f4f4f4]">
+    <main class="container mx-auto lg:p-4">
       <!-- first section  -->
-      <section class="pb-6 lg:pb-12">
+      <section class="pb-6 lg:pb-12 bg-[#f4f4f4]">
         <!--vector image div  -->
         <div class="mb-4">
           <img src="./images/Vector.png" alt="" class="hidden lg:block" />
@@ -259,7 +259,7 @@
         </div>
 
         <!-- work cards  -->
-        <div class="grid grid-cols-1 lg:grid-cols-4">
+        <div class="grid grid-cols-1 lg:grid-cols-4 w-11/12 mx-auto">
           <div
             class="card bg-[#E7C1D3] text-primary-content w-11/12 mx-auto mb-6 lg:mb-0"
           >
@@ -330,8 +330,10 @@
       </section>
 
       <!-- second section  -->
-      <section class="pb-6 lg:pb-12">
-        <div class="text-center space-y-4 w-11/12 mx-auto mb-6 lg:mb-12">
+      <section class="pb-6 lg:pb-12 lg:bg-white">
+        <div
+          class="text-center space-y-4 w-11/12 mx-auto mb-6 lg:mb-12 lg:mt-12"
+        >
           <button
             class="btn text-[#494949] font-extrabold rounded-3xl bg-[#ABEF5F33]/20 text-base mt-8 lg:mt-0 gap-0"
           >
@@ -340,27 +342,35 @@
             ></i>
             Explore our Latest works
           </button>
-          <h1 class="text-[#212121] font-bold text-xl">Our Latest Portfolio</h1>
-          <p class="text-[#494949] font-medium text-sm">
+          <h1 class="text-[#212121] font-bold text-xl lg:text-4xl">
+            Our Latest Portfolio
+          </h1>
+          <p class="text-[#494949] font-medium text-sm lg:text-base">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
 
         <!-- cards  -->
-        <div class="space-y-4 lg:space-y-0 w-11/12 mx-auto mb-6 lg:mb-12">
-          <div class="card p-8 border-2 rounded-xl bg-white gap-4">
-            <figure>
+        <div
+          class="space-y-4 lg:space-y-0 w-11/12 mx-auto mb-6 lg:mb-12 lg:grid lg:grid-cols-12 lg:grid-rows-2 lg:gap-6"
+        >
+          <div
+            class="card p-8 border-2 rounded-xl bg-white gap-4 lg:col-span-8 lg:flex-row lg:p-6"
+          >
+            <figure class="lg:basis-2/5 h-full">
               <img
                 src="./images/img1.png"
                 class="rounded-xl w-full h-full object-cover"
               />
             </figure>
-            <div class="card-body p-0">
-              <h2 class="card-title text-[#494949] text-xl font-extrabold">
+            <div class="card-body p-0 lg:justify-between lg:basis-3/5">
+              <h2
+                class="card-title text-[#494949] text-xl font-extrabold lg:text-2xl"
+              >
                 Commercial
               </h2>
-              <p class="text-[#737373] font-medium">
+              <p class="text-[#737373] font-medium text-sm lg:text-base">
                 The barn house captivates with its blend of rustic charm and
                 modern. The barn house captivates with its blend of rustic charm
                 and modern .
@@ -378,8 +388,10 @@
             </div>
           </div>
 
-          <div class="card p-8 border-2 rounded-xl bg-white gap-4">
-            <figure>
+          <div
+            class="p-8 border-2 rounded-xl bg-white gap-4 lg:col-span-4 lg:flex-row lg:p-6"
+          >
+            <figure class="h-full">
               <img
                 src="./images/img2.png"
                 class="rounded-xl w-full h-full object-cover"
@@ -387,8 +399,10 @@
             </figure>
           </div>
 
-          <div class="card p-8 border-2 rounded-xl bg-white gap-4">
-            <figure>
+          <div
+            class="p-8 border-2 rounded-xl bg-white gap-4 lg:col-start-10 col-span-3 lg:flex-row lg:p-6"
+          >
+            <figure class="h-full">
               <img
                 src="./images/img5.png"
                 class="rounded-xl w-full h-full object-cover"
@@ -396,18 +410,22 @@
             </figure>
           </div>
 
-          <div class="card p-8 border-2 rounded-xl bg-white gap-4">
-            <figure>
+          <div
+            class="card p-8 border-2 rounded-xl bg-white gap-4 lg:flex-row lg:col-start-4 lg:col-span-6 lg:row-start-2 lg:p-6"
+          >
+            <figure class="h-full lg:basis-1/2">
               <img
                 src="./images/img4.png"
                 class="rounded-xl w-full h-full object-cover"
               />
             </figure>
-            <div class="card-body p-0">
-              <h2 class="card-title text-[#494949] text-xl font-extrabold">
+            <div class="card-body p-0 lg:basis-1/2">
+              <h2
+                class="card-title text-[#494949] text-xl font-extrabold lg:text-2xl"
+              >
                 Commercial
               </h2>
-              <p class="text-[#737373] font-medium">
+              <p class="text-[#737373] font-medium text-sm lg:text-base">
                 The barn house captivates with its blend of rustic charm and
                 modern. The barn house captivates with its blend of rustic charm
                 and modern .
@@ -425,8 +443,10 @@
             </div>
           </div>
 
-          <div class="card p-8 border-2 rounded-xl bg-white gap-4">
-            <figure>
+          <div
+            class="p-8 border-2 rounded-xl bg-white gap-4 lg:col-start-1 col-span-3 row-start-2 lg:flex-row lg:p-6"
+          >
+            <figure class="h-full">
               <img
                 src="./images/img3.png"
                 class="rounded-xl w-full h-full object-cover"
@@ -434,7 +454,7 @@
             </figure>
           </div>
 
-          <div class="card p-8 border-2 rounded-xl bg-white gap-4">
+          <div class="card p-8 border-2 rounded-xl bg-white gap-4 lg:hidden">
             <figure>
               <img
                 src="./images/img5.png"
