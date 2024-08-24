@@ -37,7 +37,7 @@
               Manrope: ["Manrope", "sans-serif"],
             },
             backgroundImage: {
-              buttonbg: "#ABEF5F",
+              texture: "url('./images/bg.jpg')",
             },
           },
         },
@@ -332,7 +332,7 @@
       </section>
 
       <!-- second section  -->
-      <section class="pb-6 lg:pb-12 lg:bg-white">
+      <section class="pb-6 lg:pb-12 bg-[#f4f4f4] lg:bg-white">
         <div
           class="text-center space-y-4 w-11/12 mx-auto mb-6 lg:mb-12 lg:mt-12"
         >
@@ -466,6 +466,114 @@
           </div>
         </div>
       </section>
+
+      <!-- input section  -->
+      <section
+        class="pb-6 lg:pb-12 bg-texture bg-no-repeat bg-cover bg-center mt-2 lg:mt-8"
+      >
+        <div
+          class="text-center space-y-4 w-11/12 mx-auto mb-6 lg:mb-12 lg:mt-12 lg:w-3/4"
+        >
+          <button
+            class="btn text-[#494949] font-extrabold rounded-3xl bg-[#ABEF5F33]/20 text-base mt-8 lg:mt-0 gap-0"
+          >
+            <i
+              class="fa-solid fa-arrow-right text-[#494949] p-2 rounded-full text-xl font-bold"
+            ></i>
+            Let's Connect
+          </button>
+          <h1 class="text-[#212121] font-extrabold text-4xl lg:text-4xl">
+            Let's Discuss Next Project
+          </h1>
+          <p class="text-[#494949] font-medium text-sm lg:text-base">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <!-- input cards  -->
+        <div
+          class="w-11/12 mx-auto space-y-4 lg:space-y-0 lg:w-3/4 lg:grid grid-cols-2 lg:gap-4"
+        >
+          <input
+            type="text"
+            placeholder="First Name*"
+            class="w-full p-4 border-none rounded-3xl"
+          />
+          <input
+            type="text"
+            placeholder="Last Name*"
+            class="w-full p-4 border-none rounded-3xl"
+          />
+          <input
+            type="number"
+            placeholder="Phone Number*"
+            class="w-full p-4 border-none rounded-3xl"
+          />
+
+          <input
+            type="email"
+            placeholder="Email*"
+            class="w-full p-4 border-none rounded-3xl"
+          />
+
+          <textarea
+            name="message"
+            id="message-area"
+            cols="30"
+            rows="10"
+            placeholder="Write your message here"
+            class="w-full p-4 border-none rounded-3xl resize-none lg:col-span-2"
+          ></textarea>
+
+          <button
+            class="btn w-full lg:w-auto text-[#1C1C1C] font-extrabold text-xl bg-[#ABEF5F] rounded-3xl lg:col-span-2"
+          >
+            Send Mail
+            <i
+              class="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full -rotate-45"
+            ></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- footer section  -->
+      <footer class="px-6 py-12 bg-[#1C1C1C] my-2">
+        <div class="text-center space-y-4 lg:space-y-6 mx-auto w-4/5">
+          <a class="btn btn-ghost text-lg lg:text-2xl p-0 lg:pl-4"
+            ><i
+              class="fa-solid fa-arrow-right text-[#1C1C1C] bg-green p-2 rounded-full -rotate-45"
+            ></i
+            ><span class="font-extrabold text-4xl text-[#E9E9E9]"
+              >Rinterio</span
+            ></a
+          >
+
+          <p class="text-[#737373] font-medium">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+
+          <ul
+            class="text-[#E9E9E9] font-medium space-y-4 lg:space-y-0 lg:flex lg:items-center lg:justify-between lg:p-4"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+
+          <button
+            class="btn w-full lg:w-auto text-[#1C1C1C] font-extrabold text-xl bg-[#ABEF5F] rounded-3xl lg:col-span-2"
+          >
+            Book Consult
+            <i
+              class="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full -rotate-45"
+            ></i>
+          </button>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
